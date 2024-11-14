@@ -1,0 +1,104 @@
+---
+title: ARX DEV TOOLS
+---
+
+import { LinkButton } from '@astrojs/starlight/components';
+
+<div class="arx-dev-tools-header">
+  <LinkButton
+    href="https://chromewebstore.google.com/detail/1930/mbcibgkijjmnhbbheafplbapiacgkebe?utm_source=ext_app_menu"
+    variant="minimal"
+    class="get-extension-button"
+  >
+    <img src="/fab.png" alt="ARX DEV TOOLS icon" width="48" height="48" />
+    <span>Get it on Chrome Web Store</span>
+  </LinkButton>
+</div>
+
+- **ARX Dev Tools** is a powerful Chrome extension tailored for developers, offering a streamlined, interactive way to get real-time insights into 📦project status during development.
+
+- With features designed for convenience and clarity, ARX Dev Tools provides:
+  - Information about page details
+  - ⏱️Recently modified components
+  - Whether the project is being viewed locally or as a live version
+
+-  ARX Dev Tools is primarily designed to support **<span class="khoros">Khoros</span>** and **<span class="aurora">Aurora</span>** customizations, providing specialized tools and insights for these platforms.
+
+<style>
+{`
+  .arx-dev-tools-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+
+  .arx-dev-tools-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    background: linear-gradient(45deg, #6366f1, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .get-extension-button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+    padding: 0.75rem 1.5rem;
+    border: 2px solid transparent; /* Make the border transparent */
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+    background: transparent;
+  }
+  .khoros {
+  color: #FF6F61; /* Color for Khoros text */
+  href: https://khoros.com/
+}
+
+.aurora{
+  color: #4CAF50; /* Color for Aurora text */
+}
+
+
+  .get-extension-button:hover {
+    background: rgba(99, 102, 241, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(99, 102, 241, 0.1);
+  }
+
+  .get-extension-button img {
+    transition: transform 0.3s ease;
+  }
+
+  .get-extension-button:hover img {
+    transform: rotate(15deg) scale(1.1);
+  }
+
+  .get-extension-button span {
+    font-weight: 600;
+    color: #6366f1;
+  }
+
+  @media (max-width: 768px) {
+    .arx-dev-tools-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .arx-dev-tools-header h1 {
+      font-size: 2rem;
+    }
+
+    .get-extension-button {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+`}
+</style>

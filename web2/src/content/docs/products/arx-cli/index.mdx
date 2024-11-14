@@ -1,0 +1,69 @@
+---
+title: ARX CLI
+description: A powerful command-line tool for previewing and managing API endpoints and components directly from your local repository.
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+
+**arx-cli** is your go-to command-line companion for efficient development workflows. Designed for modular and serverless API structures, ARX CLI empowers developers to inspect, preview, and manage components and endpoints without the need for an active server.
+
+<Card icon="🚀" title="Supercharge Your Development">
+  ARX CLI streamlines your workflow, allowing you to navigate between components and API endpoints with ease. Experience rapid testing and iteration within your development pipeline.
+</Card>
+
+## Key Features
+
+<CardGrid stagger>
+  <Card icon="🖥️" title="Preview Components">
+    Quickly view and verify component files from your local repository directly in the terminal.
+  </Card>
+  <Card icon="🌐" title="Standalone API Viewing">
+    Access API files directly in the browser without a server. These files contain functions that operate as independent endpoints.
+  </Card>
+  <Card icon="⚡" title="Streamlined Workflow">
+    Efficiently navigate between components and API endpoints for quick testing and iteration.
+  </Card>
+  <Card icon="🛠️" title="Developer-Friendly">
+    Designed with developers in mind, ARX CLI integrates seamlessly into your existing development environment.
+  </Card>
+</CardGrid>
+
+## Installation
+
+Get started with ARX CLI by installing it using your preferred package manager. Choose the command that matches your setup:
+
+<Tabs>
+  <TabItem label="npm">
+    ```bash
+    npm install arx-cli
+    ```
+  </TabItem>
+  <TabItem label="yarn">
+    ```bash
+    yarn add arx-cli
+    ```
+  </TabItem>
+  <TabItem label="pnpm">
+    ```bash
+    pnpm install arx-cli
+    ```
+  </TabItem>
+  <TabItem label="bun">
+    ```bash
+    bun add arx-cli
+    ```
+  </TabItem>
+</Tabs>
+
+## Quick Start
+
+After installation, you can start using ARX CLI immediately. Here's a quick example to get you started:
+
+```bash
+# Preview a component
+npm run arx preview:component MyAwesomeComponent
+
+# View an API endpoint
+npm run arx preview:endpoint MyAPIEndpoint
